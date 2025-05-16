@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+
+
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="modal.css">
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Design</a>
-        <span></span>
-    </nav>
     <header>
-        <h1>Hi, I'm Paul</h1>
-        <p class="scroll-text">Welcome to my portfolio. Here you can find my work and projects.</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Design</a></li>
+                <span class="span"></span>
+            </ul>
+            <h1 class="left-name">Hi, I'm Paul</h1>
+        </nav>    
+         
     </header>
+    <p class="scroll-text">Welcome to my portfolio. Here you can find my work and projects.</p>
 
     <div class="content">
         <h1>UI/UX <br><span>Designer&</span><br>Frontend Web</h1>
@@ -86,6 +92,15 @@
         </div>
     -->
         <!-- Add more portfolio items as needed -->
+
+
+        <!-- Modal Structure -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+
+        <script src="modal.js"></script>
     </section>
 
     <footer>
